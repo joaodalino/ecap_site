@@ -3,7 +3,161 @@
     padding: 0;
 }
 
-@media screen and (min-width:1024px){
+main {
+    background-image: url(../imagens/bgecap3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soserveparaisso {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    border-bottom: solid 1px;
+    border-color: #F9AF18;
+}
+
+.soserveparaisso > ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.soserveparaisso a{
+    text-decoration: none;
+    color: #fffafa;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.botao{
+    border: 2px solid;
+    border-color: #BB2025;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav h3{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #fffafa;
+    text-align: center;
+}
+
+nav a {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    background-color: #F9AF18;
+    color: #fffafa;
+}
+
+@media screen and (min-width:1900px) {
+
+    main {
+        height: 70vh;
+        min-height: 735px;
+    }
+
+    header {
+        height: 120px;
+        width: 100%;
+    }
+    
+    .soserveparaisso > img {
+        width: 10%;
+    }
+    
+    .soserveparaisso li {
+        padding: 0px 8px;
+    }
+    
+    .soserveparaisso a{
+        font-size: 1.55em;
+    }
+    
+    .botao{
+        padding: 4px 20px;
+        border-radius: 20px;
+    }
+    
+    nav a {
+        padding: 8.5px 30px;
+        font-size: 2em;
+        border-radius: 30px;
+    }
+    
+    nav {
+        margin-top: 250px;
+    }
+    
+    nav h3{
+        font-size: 5em;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1899px){
+    main{
+    height: 100vh;
+    min-height: 600px;
+ }
+
+ header {
+    height: 75px;
+    width: 100%;
+}
+
+.soserveparaisso > img {
+    height: 50%;
+    width: 13.5%;
+}
+
+.soserveparaisso li {
+    padding: 0px 8px;
+}
+
+.soserveparaisso a{
+    font-size: 1.25em;
+}
+
+.botao{
+    padding: 2px 20px;
+    border-radius: 20px;
+}
+
+nav a {
+    padding: 5px 20px;
+    font-size: 1.5em;
+    border-radius: 20px;
+}
+
+nav {
+    margin-top: 150px;
+}
+
+nav h3{
+    font-size: 4em;
+    width: 60%;
+    border-radius: 25px;
+}
 
 }
 
