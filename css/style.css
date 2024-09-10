@@ -45,14 +45,14 @@ header{
     border-color: #BB2025;
 }
 
-nav {
+.principal {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-nav h3{
+.principal h3{
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -60,13 +60,21 @@ nav h3{
     text-align: center;
 }
 
-nav a {
+.principal a {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
     background-color: #F9AF18;
     color: #fffafa;
+}
+
+.headertelefone{
+    display: none;
+}
+
+.menutelefone{
+    display: none;
 }
 
 @media screen and (min-width:1900px) {
@@ -79,6 +87,10 @@ nav a {
     header {
         height: 120px;
         width: 100%;
+    }
+
+    .soserveparaisso{
+        padding: 0px 0px 10px 0px;
     }
     
     .soserveparaisso > img {
@@ -94,21 +106,21 @@ nav a {
     }
     
     .botao{
-        padding: 4px 20px;
+        padding: 3.75px 20px;
         border-radius: 20px;
     }
     
-    nav a {
+    .principal a {
         padding: 8.5px 30px;
         font-size: 2em;
         border-radius: 30px;
     }
     
-    nav {
+    .principal {
         margin-top: 250px;
     }
     
-    nav h3{
+    .principal h3{
         font-size: 5em;
         width: 60%;
     }
@@ -120,10 +132,15 @@ nav a {
     min-height: 600px;
  }
 
- header {
-    height: 75px;
-    width: 100%;
-}
+    header{
+        height: 75px;
+        width: 100%;
+ }
+
+    .soserveparaisso{
+        padding: 0px 0px 5px 0px;
+ }
+
 
 .soserveparaisso > img {
     height: 50%;
@@ -143,17 +160,17 @@ nav a {
     border-radius: 20px;
 }
 
-nav a {
+.principal a {
     padding: 5px 20px;
     font-size: 1.5em;
     border-radius: 20px;
 }
 
-nav {
+.principal {
     margin-top: 150px;
 }
 
-nav h3{
+.principal h3{
     font-size: 4em;
     width: 60%;
     border-radius: 25px;
@@ -162,9 +179,102 @@ nav h3{
 }
 
 @media screen and (min-width:768px) and (max-width:1023px){
+
+    main{
+        height: 100vh;
+     }
     
+     header {
+        height: 15px;
+        width: 100%;
+    }
+    
+    .soserveparaisso{
+        padding: 2.5px 0px;
+    }
+    
+    
+    .soserveparaisso > img {
+        height: 50%;
+        width: 13.5%;
+    }
+    
+    .soserveparaisso li {
+        padding: 0px 8px;
+    }
+    
+    .soserveparaisso a{
+        font-size: 1.25em;
+    }
+    
+    .botao{
+        padding: 2px 20px;
+        border-radius: 20px;
+    }
+    
+    .principal a {
+        padding: 5px 20px;
+        font-size: 1.5em;
+        border-radius: 20px;
+    }
+    
+    .principal {
+        margin-top: 150px;
+    }
+    
+    .principal h3{
+        font-size: 4em;
+        width: 60%;
+        border-radius: 25px;
+    }
 }
 
 @media screen and (max-width:767px){
+    main{
+        background-image: url(../imagens/bgmobile.jpg);
+        height: 100vh;
+     }
     
+     header {
+        height: 80px;
+        width: 100%;
+    }
+    
+    .soserveparaisso{
+        padding: 0px 0px;
+    }
+    
+    .soserveparaisso > img {
+        height: 20%;
+        width: 35%;
+    }
+    
+    .soserveparaisso ul{
+        display: none;
+    }
+    
+    .headertelefone{
+        display: block;
+    }
+
+    .botaomenu{
+        background: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .principal a {
+       display: none;
+    }
+    
+    .principal {
+        margin-top: 75%;
+    }
+    
+    .principal h3{
+        font-size: 2.75em;
+        width: 80%;
+        border-radius: 25px;
+    }
 }
