@@ -1,10 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Lato", sans-serif;
 }
 
 main {
-    background-image: url(../imagens/bgecap3.jpg);
+    background-image: url(../imagens/bgecap.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -65,6 +66,7 @@ header{
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
+    border: solid 1px #BB2025;
     background-color: #F9AF18;
     color: #fffafa;
 }
@@ -75,6 +77,72 @@ header{
 
 .menutelefone{
     display: none;
+}
+
+.destaques{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ajustelarguradestaque{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ajustelarguradestaque > article{
+    height: 50%;
+    border: solid 1px #fff;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+article svg{
+    height: 36px;
+    width: 36px;
+}
+
+.sobre{
+    background-color: #fff;
+    color: #555555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.textoabout {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textoabout h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    border-bottom: solid 1.5px #BB2025;
+}
+
+.textoabout p {
+    font-size: 1.10em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+}
+
+.sobre > img{
+    width: 30%;
 }
 
 @media screen and (min-width:1900px) {
@@ -117,12 +185,31 @@ header{
     }
     
     .principal {
-        margin-top: 250px;
+        margin-top: 100px;
     }
     
     .principal h3{
         font-size: 5em;
         width: 60%;
+    }
+
+    .destaques{
+        height: 250px;
+    }
+    
+    .ajustelarguradestaque{
+        width: 50%;
+    }
+    
+    .ajustelarguradestaque > article{
+    
+        width: 12.5%;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    
+    .ajustelarguradestaque p {
+        width: 80%;
     }
 }
 
@@ -173,70 +260,38 @@ header{
 .principal h3{
     font-size: 4em;
     width: 60%;
-    border-radius: 25px;
+}
+
+.destaques{
+    height: 250px;
+}
+
+.ajustelarguradestaque{
+    width: 75%;
+}
+
+.ajustelarguradestaque > article{
+
+    width: 12.5%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.ajustelarguradestaque p {
+    width: 80%;
 }
 
 }
 
 @media screen and (min-width:768px) and (max-width:1023px){
-
-    main{
-        height: 100vh;
-     }
-    
-     header {
-        height: 15px;
-        width: 100%;
-    }
-    
-    .soserveparaisso{
-        padding: 2.5px 0px;
-    }
-    
-    
-    .soserveparaisso > img {
-        height: 50%;
-        width: 13.5%;
-    }
-    
-    .soserveparaisso li {
-        padding: 0px 8px;
-    }
-    
-    .soserveparaisso a{
-        font-size: 1.25em;
-    }
-    
-    .botao{
-        padding: 2px 20px;
-        border-radius: 20px;
-    }
-    
-    .principal a {
-        padding: 5px 20px;
-        font-size: 1.5em;
-        border-radius: 20px;
-    }
-    
-    .principal {
-        margin-top: 150px;
-    }
-    
-    .principal h3{
-        font-size: 4em;
-        width: 60%;
-        border-radius: 25px;
-    }
-}
-
-@media screen and (max-width:767px){
     main{
         background-image: url(../imagens/bgmobile.jpg);
         height: 100vh;
+        min-height: 1024px;
      }
     
      header {
-        height: 80px;
+        height: 100px;
         width: 100%;
     }
     
@@ -245,8 +300,8 @@ header{
     }
     
     .soserveparaisso > img {
-        height: 20%;
-        width: 35%;
+        width: 226px;
+        height: 66px;
     }
     
     .soserveparaisso ul{
@@ -264,17 +319,127 @@ header{
         box-shadow: none;
     }
 
+    .botaomenu svg{
+        width:80px;
+        height:80px;
+    }
+
     .principal a {
        display: none;
     }
     
     .principal {
-        margin-top: 75%;
+        margin-top: 5%;
     }
     
     .principal h3{
-        font-size: 2.75em;
+        font-size: 4em;
+        width: 60%;
+    }
+    
+    .destaques{
+        margin-top: 10%;
+    }
+    
+    .ajustelarguradestaque{
+        flex-direction: column;
+        gap: 15px;
+        width: 75%;
+    }
+    
+    .ajustelarguradestaque > article{
+    
+        width: 75%;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    
+    .ajustelarguradestaque p {
         width: 80%;
-        border-radius: 25px;
+    }
+
+    .sobre {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px){
+    main{
+        background-image: url(../imagens/bgmobile.jpg);
+        height: 120vh;
+        min-height: 960px;
+        max-height: 961px;
+     }
+    
+     header {
+        height: 80px;
+        width: 100%;
+    }
+    
+    .soserveparaisso{
+        padding: 0px 0px;
+    }
+    
+    .soserveparaisso > img {
+        height: 36px;
+        width: 122px;
+    }
+    
+    .soserveparaisso ul{
+        display: none;
+    }
+    
+    .headertelefone{
+        display: block;
+    }
+
+    .botaomenu{
+        background: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .botaomenu svg {
+        width:64px; 
+        height:64px;
+    }
+
+    .principal a {
+       display: none;
+    }
+    
+    .principal {
+        margin-top: 5%;
+    }
+    
+    .principal h3{
+        font-size: 2em;
+        width: 80%;
+    }
+
+    .destaques{
+        margin-top: 5%;
+    }
+    
+    .ajustelarguradestaque{
+        width: 75%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .ajustelarguradestaque > article{
+        height: 100px;
+        width: 90%;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    
+    .ajustelarguradestaque p {
+        width: 80%;
+    }
+
+    .sobre{
+        display: none;
     }
 }
