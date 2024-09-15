@@ -41,6 +41,10 @@ header{
     font-style: normal;
 }
 
+.soserveparaisso a:hover {
+    color: #BB2025;
+}
+
 .botao{
     border: 2px solid;
     border-color: #BB2025;
@@ -53,7 +57,7 @@ header{
     justify-content: center;
 }
 
-.principal h3{
+.principal h1{
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -69,6 +73,10 @@ header{
     border: solid 1px #BB2025;
     background-color: #F9AF18;
     color: #fffafa;
+}
+
+.principal a:hover {
+    color: #BB2025;
 }
 
 .headertelefone{
@@ -121,10 +129,8 @@ article svg{
 }
 
 .textoabout {
-    width: 40%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 .textoabout h2 {
@@ -143,6 +149,187 @@ article svg{
 
 .sobre > img{
     width: 30%;
+}
+
+.mensagem{
+    background-color: #303031;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    font-size: 1.5em;
+}
+
+.mensagem b {
+    color: #F9AF18;
+}
+
+.setores{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containersetores{
+    display: flex;
+    flex-direction: column;
+}
+
+.containersetores h2 {
+    border-bottom: solid 1.5px #BB2025;
+    color: #555555;
+}
+
+.ajustesetores{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.ajustesetores article {
+    border: solid 0.75px #555555;
+    border-top: solid 10px #BB2025;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.ajustesetores p {
+    font-weight: 400;
+    font-style: normal;
+    color: #555555;
+}
+
+.parceiros {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerparceiros{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerparceiros h2{
+    border-bottom: solid 1.5px #BB2025;
+    color: #555555;
+}
+
+.ajusteparceiros{
+    display: flex;
+    overflow: hidden;
+}
+
+.ajusteparceiros img {
+    height: auto;
+    width: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape{
+    width: 100%;
+    color: #fff;
+    background-color: #303031;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 5px #BB2025;
+}
+
+.containerrodape{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    padding: 50px 0px;
+}
+
+.container1, .container3{
+    width: 20%;
+    height: auto;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.container2{
+    width: 40%;
+    height: auto;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.container1 img {
+    width: 35%;
+}
+
+.container1 p {
+    font-size: 1.1em;
+    margin-left: 4px;
+}
+
+.container2 svg {
+    width: 21px;
+    height: 21px;
+}
+
+.container2 h4{
+    font-size: 1.15em;
+}
+
+.firula {
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.container3 nav {
+    display: flex;
+    gap: 10px;
+    height: 50px;
+}
+
+.container3 h4{
+    font-size: 1.15em;
+}
+
+.container3 svg{
+    height: 100%;
+}
+
+.digitalize{
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 13.5px 0px;
+}
+
+.digitalize a {
+    text-decoration: none;
+    color: #F9AF18;
+}
+
+.digitalize a:hover {
+    color: #BB2025;
 }
 
 @media screen and (min-width:1900px) {
@@ -188,7 +375,7 @@ article svg{
         margin-top: 100px;
     }
     
-    .principal h3{
+    .principal h1{
         font-size: 5em;
         width: 60%;
     }
@@ -211,6 +398,201 @@ article svg{
     .ajustelarguradestaque p {
         width: 80%;
     }
+
+    .sobre{
+        width: 100%;
+        height: 60vh;
+        min-height: 630px;
+    }
+    
+    .textoabout {
+        width: 40%;
+        gap: 10px;
+    }
+    
+    .textoabout h2 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        border-bottom: solid 1.5px #BB2025;
+    }
+    
+    .textoabout p {
+        font-size: 1.10em;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+    
+    .sobre > img{
+        width: 30%;
+    }
+
+    .mensagem{
+        gap: 20px;
+        height: 20vh;
+        font-size: 1.5em;
+    }
+
+    .setores{
+        width: 100%;
+        padding: 60px 0px;
+    }
+    
+    .containersetores{
+        width: 50%;
+        gap: 15px;
+    }
+    
+    .containersetores h2 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        width: 57%;
+    }
+    
+    .ajustesetores{
+        width: 100%;
+        gap: 30px 3%;
+    }
+    
+    .ajustesetores article {
+        width: 31%;
+        height: 300px;
+    }
+    
+    .ajustesetores p {
+        width: 100%;
+        height: 50%;
+        font-size: 1.15em;
+    }
+    
+    .ajustesetores h4{
+        font-size: 1.5em;
+    }
+    
+    .ajustesetores svg {
+        margin-top: 10%;
+        width: 80px;
+        height: 80px;
+    }
+
+    .parceiros {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    
+    .containerparceiros{
+        width: 50%;
+    }
+    
+    .containerparceiros h2{
+        width: 57%;
+        font-size: 3em;
+    }
+    
+    .ajusteparceiros{
+        gap: 5%;
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+        height: 100px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .rodape{
+        width: 100%;
+        color: #fff;
+        background-color: #303031;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-top: solid 5px #BB2025;
+    }
+    
+    .containerrodape{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        gap: 20%;
+        padding: 50px 0px;
+    }
+    
+    .container1, .container3{
+        width: 20%;
+        height: auto;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .container2{
+        width: 40%;
+        height: auto;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    
+    .container1 img {
+        width: 35%;
+    }
+    
+    .container1 p {
+        font-size: 1.1em;
+        margin-left: 4px;
+    }
+    
+    .container2 svg {
+        width: 21px;
+        height: 21px;
+    }
+    
+    .container2 h4{
+        font-size: 1.15em;
+    }
+    
+    .firula {
+        font-size: 0.8em;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .container3 nav {
+        display: flex;
+        gap: 10px;
+        height: 50px;
+    }
+    
+    .container3 h4{
+        font-size: 1.15em;
+    }
+    
+    .container3 svg{
+        height: 100%;
+    }
+    
+    .digitalize{
+        background-color: #000;
+        width: 100%;
+        text-align: center;
+        padding: 13.5px 0px;
+    }
+    
+    .digitalize a {
+        text-decoration: none;
+        color: #F9AF18;
+    }
+    
+    .digitalize a:hover {
+        color: #BB2025;
+    }
+    
 }
 
 @media screen and (min-width:1024px) and (max-width:1899px){
@@ -257,7 +639,7 @@ article svg{
     margin-top: 150px;
 }
 
-.principal h3{
+.principal h1{
     font-size: 4em;
     width: 60%;
 }
@@ -281,13 +663,109 @@ article svg{
     width: 80%;
 }
 
+.sobre{
+    width: 100%;
+    height: 100vh;
+}
+
+.textoabout {
+    width: 40%;
+    gap: 10px;
+}
+
+.textoabout h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    border-bottom: solid 1.5px #BB2025;
+}
+
+.textoabout p {
+    font-size: 1.10em;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.sobre > img{
+    width: 30%;
+}
+
+.mensagem{
+    gap: 20px;
+    height: 20vh;
+    min-height: 193px;
+    font-size: 1.5em;
+}
+
+.setores{
+    width: 100%;
+    padding: 60px 0px;
+}
+
+.containersetores{
+    width: 75%;
+    gap: 15px;
+}
+
+.containersetores h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    width: 57%;
+}
+
+.ajustesetores{
+    width: 100%;
+    gap: 30px 3%;
+}
+
+.ajustesetores article {
+    width: 31%;
+    height: 300px;
+}
+
+.ajustesetores p {
+    width: 100%;
+    height: 50%;
+    font-size: 1.15em;
+}
+
+.ajustesetores h4{
+    font-size: 1.5em;
+}
+
+.ajustesetores svg {
+    margin-top: 10%;
+    width: 80px;
+    height: 80px;
+}
+
+.parceiros {
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.containerparceiros{
+    width: 75%;
+}
+
+.containerparceiros h2{
+    width: 57%;
+    font-size: 3em;
+}
+
+.ajusteparceiros{
+    gap: 5%;
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+    height: 100px;
+}
+
 }
 
 @media screen and (min-width:768px) and (max-width:1023px){
     main{
         background-image: url(../imagens/bgmobile.jpg);
-        height: 100vh;
-        min-height: 1024px;
+        height: auto;
+        padding: 25px;
      }
     
      header {
@@ -332,7 +810,7 @@ article svg{
         margin-top: 5%;
     }
     
-    .principal h3{
+    .principal h1{
         font-size: 4em;
         width: 60%;
     }
@@ -358,17 +836,126 @@ article svg{
         width: 80%;
     }
 
-    .sobre {
+    .sobre{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .sobre{
+        width: 100%;
+        height: auto;
+        /* min-height: 800px; */
+        padding-bottom: 25px;
+    }
+    
+    .textoabout {
+        width: 90%;
+        gap: 10px;
+    }
+    
+    .textoabout h2 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        border-bottom: solid 1.5px #BB2025;
+    }
+    
+    .textoabout p {
+        font-size: 1.10em;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+    
+    .sobre > img{
         display: none;
+    }
+
+    .mensagem{
+        gap: 20px;
+        height: 20vh;
+        min-height: 204px;
+        font-size: 1.5em;
+    }
+    
+    .setores{
+        width: 100%;
+        padding: 15px 0px;
+    }
+    
+    .containersetores{
+        width: 100%;
+        gap: 15px 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .containersetores h2 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    .ajustesetores{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 30px 3%;
+    }
+    
+    .ajustesetores article {
+        width: 75%;
+        height: 300px;
+    }
+    
+    .ajustesetores p {
+        width: 100%;
+        height: 50%;
+        font-size: 1.15em;
+    }
+    
+    .ajustesetores h4{
+        font-size: 1.45em;
+    }
+    
+    .ajustesetores svg {
+        margin-top: 10%;
+        width: 64px;
+        height: 64px;
+    }
+
+    .parceiros {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    
+    .containerparceiros{
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+    
+    .containerparceiros h2{
+        width: 100%;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    
+    .ajusteparceiros{
+        gap: 5%;
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+        height: 80px;
     }
 }
 
 @media screen and (max-width:767px){
     main{
         background-image: url(../imagens/bgmobile.jpg);
-        height: 120vh;
-        min-height: 960px;
-        max-height: 961px;
+        height: auto;
+        /* min-height: 960px;
+        max-height: 961px; */
+        padding-bottom: 25px;
      }
     
      header {
@@ -413,7 +1000,7 @@ article svg{
         margin-top: 5%;
     }
     
-    .principal h3{
+    .principal h1{
         font-size: 2em;
         width: 80%;
     }
@@ -440,6 +1027,115 @@ article svg{
     }
 
     .sobre{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .sobre{
+        width: 100%;
+        height: auto;
+        /* min-height: 800px; */
+        padding-bottom: 25px;
+    }
+    
+    .textoabout {
+        width: 90%;
+        gap: 10px;
+    }
+    
+    .textoabout h2 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        border-bottom: solid 1.5px #BB2025;
+    }
+    
+    .textoabout p {
+        font-size: 1.10em;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+    
+    .sobre > img{
         display: none;
     }
+
+    .mensagem{
+        gap: 10px;
+        height: auto;
+        padding: 25px 0px;
+        font-size: 0.75em;
+    }
+
+    .setores{
+        width: 100%;
+        padding: 15px 0px;
+    }
+    
+    .containersetores{
+        width: 100%;
+        gap: 15px 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .containersetores h2 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    .ajustesetores{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 30px 3%;
+    }
+    
+    .ajustesetores article {
+        width: 75%;
+        height: 300px;
+    }
+    
+    .ajustesetores p {
+        width: 100%;
+        height: 50%;
+        font-size: 1.15em;
+    }
+    
+    .ajustesetores h4{
+        font-size: 1.45em;
+    }
+    
+    .ajustesetores svg {
+        margin-top: 10%;
+        width: 64px;
+        height: 64px;
+    }
+
+    .parceiros {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    
+    .containerparceiros{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .containerparceiros h2{
+        width: 90%;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    
+    .ajusteparceiros{
+        gap: 5%;
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+        height: 80px;
+    }
+    
 }
