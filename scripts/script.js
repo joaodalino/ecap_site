@@ -13,3 +13,37 @@
                 }
             }, 15);
         });
+
+        let valor = false; 
+
+        document.getElementById("butas").addEventListener("click", function() {
+            // Alterna o valor lógico de 'valor' a cada clique
+            valor = !valor;
+            
+            // Seleciona o elemento da tag que você quer mudar o display
+            const menutelefone = document.querySelector(".menutelefone");
+
+            // Verifica o estado de 'valor' para aplicar o display adequado
+            if (valor === true) {
+                menutelefone.style.display = "flex"; // Mostra o menu
+            } else {
+                menutelefone.style.display = "none"; // Esconde o menu
+            }
+        });
+
+        document.getElementById("brutus").addEventListener("click", function() {
+            // Alterna o valor lógico de 'valor' a cada clique
+            valor = !valor;
+            
+            // Seleciona o elemento da tag que você quer mudar o display
+            const menutelefone = document.querySelector(".menutelefone");
+
+            // Verifica o estado de 'valor' para aplicar o display adequado
+            if (valor === true) {
+                menutelefone.style.display = "flex"; // Mostra o menu
+            } else {
+                menutelefone.style.display = "none"; // Esconde o menu
+            }
+        });
+        
+
